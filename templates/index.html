@@ -1,0 +1,246 @@
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <img class="col-md-1 col-lg-1 col-1" src="/static/down.jpg">
+        <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><strong>Home</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Aboutus.html"><strong>About</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active " href="Aboutus.html"><strong>Contact</strong></a>
+            </li>
+
+
+          </ul>
+          <form class="d-flex me-4">
+            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="hero-image">
+          <h1 class="text-center text-white p-2"> Covid-19</h1>
+
+
+          <nav class="navbar  justify-content-center  navbar-expand-lg navbar-dark">
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse    navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-6 col-md-6 mb-2 mb-lg-2">
+
+                <li id="second" class="nav-item "><a onclick="myFunction2()" class="nav-link text-white text">Anlaysis</a>
+                </li>
+                <li id="first" class="nav-item"><a onclick="myFunction()" class="nav-link  text-white text">History</a>
+                </li>
+                <li id="fifth" class="nav-item"><a class="nav-link text-white  text "
+                    onclick="myFunction5()">Symptoms</a></li>
+                <li id="third" class="nav-item"><a class="nav-link text-white text"
+                    onclick="myFunction3()">Predictions</a></li>
+                <li id="fourth" class="nav-item"><a class="nav-link text-white text"
+                      onclick="myFunction4()">Preventions</a></li>
+                <li class="nav-item"><a href="new2.php">news</a></li>
+
+</ul>
+            </div>
+          </nav>
+
+          <br>
+
+          <div class="col-md-8 col-lg-6 col-12">
+            <h1 class="content h1"><strong>LATEST UPDATES ABOUT CORONA VIRUS</strong></h1>
+
+
+            <h3>Lets start your journey</h3>
+            <button class="button rounded-pill justify-content-center" type="button ">Get Started</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row  text-center">
+        <div class="col-lg-8 col-md-8 col-12">
+          <h1 class="h1 bg-dark ">Covid 19 in PAKISTAN</h1>
+          <p style="text-align:justify; font-family:'Arial, Helvetica, sans-serif; font-size:5rem">As Corona Virus
+            disease are increasing day by day and we are losting our beloved ones.Deaths are increasing tremendously.To
+            aware about CAUSES,SYMPTOMS and Preventions this platform is very informative.Lets give a look on it. To
+            know about <a href="history.html">History</a> ,<a href="symptoms.html">Symptoms </a>and <a
+              href="Prevention.html">Treatments</a> click on link. </p>
+          <p style="text-align:justify; font-family:'Arial, Helvetica, sans-serif; font-size:5rem">The arrangements to
+            fight against the COVID-19, there are lots of measures being taken by the government of Pakistan to control
+            the outbreak and facilitate their people. There were many hospitals been working in this scenario to bring
+            back the life and fight against the deadly outbreak of COVID-19 in the country.
+
+            In the capital territory Islamabad, there was a single hospital functional. While in the Baluchistan, there
+            were 10 hospitals for COVID-19. In Khyber Pakhtunkhwa (KP) 7, Punjab (PJB) 6, Sindh (SD) 4, Gilgit-Baltistan
+            (GB) 4, and Azad Jammu and Kashmir (AJK) 3 hospitals were functional [18] as showed in the Fig. 1. </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12"><img src="/static/doctor.jpg"><br>
+          <hr><img src="/static/hospital.png"></div>
+      </div>
+      <div class="row  text-center">
+        <h1 class="h1 bg-dark ">WHO response in Countries</h1>
+        <div class="col-lg-4  col-md-8 col-12">
+          <div>
+            <h5>How is WHO respond to Crorna Virus</h5>
+            <video  id="video1" width="300">
+              <source src="static/video-6.mp4" type="video/mp4">
+
+            </video>
+            <div class="card-body">
+              <button class="rounded-pill" type="button " onclick="PlayPause1()">Play/Pause</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-8 col-12">
+          <div>
+            <h5>Sharing Covid-19 Response experiences</h5>
+
+            <video class=" mx-auto" id="video2" width="300">
+              <source src="static/video-6.mp4" type="video/mp4">
+
+            </video>
+            <div class="card-body">
+              <button class=" rounded-pill" type="button" onclick="PlayPause2()">Play/Pause</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-8 col-12">
+          <div>
+            <h5>WHO strategic Response Plan</h5>
+            <video id="video3" width="300">
+              <source src="static/video-6.mp4" type="video/mp4">
+
+            </video>
+            <div class="card-body">
+              <button class=" rounded-pill" type="button " onclick="PlayPause3()">Play/Pause</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    <div class="container-fluid text-white">
+      <div class="row bg-dark  ml-3">
+        <div class=" col-lg-2 col-md-2 col-2 p-2 ml-2">
+          <img src="/static/down.jpg" height="50rem" width="80rem">
+        </div>
+        <div class="col-lg-6 col-md-6 col-2 text-center p-2 col-12"><strong>About |
+            Contact us | Privacy Policy | Our Apps | Advertisements</strong></div>
+        <div class="col-lg-4 col-md-4 col-2 text-center p-2 col-4">
+          <strong> Copyright@ All Rights Reserved </strong>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  </body>
+  {% endblock %}
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+  <script src="/static/javascript/java11.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+<style>
+  .text {
+    font-size: 1.5rem;
+  }
+
+  .hero-image {
+    background-image: url("/static/girl.jpg");
+
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .h1 {
+    color: azure;
+  }
+
+  h3 {
+    color: azure;
+    font-style: italic;
+  }
+
+  li {
+
+    list-style-type: none;
+
+  }
+
+  @media screen and (max-width: 980px) {
+    .content {
+      display: none;
+    }}
+</style>

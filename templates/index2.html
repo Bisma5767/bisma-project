@@ -1,0 +1,238 @@
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>COVID-19 WEBSITE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+</head>
+
+<body>
+  
+  
+  
+
+<!-- Page Header -->
+
+  <header>
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+  <h4 style="color: cornsilk;"><img  class="col-md-1 col-lg-1 col-1" src="/static/logo.jpg"> Covid-19</h4>
+   
+  
+   <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav   col-md-6 mb-2 mb-lg-2">
+      <li id="sixth" class="nav-item"><a class="nav-link text-white text"
+                  onclick="myFunction6()">Home</a></li>
+              <li id="second" class="nav-item "><a onclick="myFunction2()" class="nav-link text-white text">Anlaysis</a>
+              </li>
+              <li id="first" class="nav-item"><a onclick="myFunction()" class="nav-link  text-white text">History</a>
+              </li>
+              <li id="fifth" class="nav-item"><a class="nav-link text-white  text "
+                  onclick="myFunction5()">Symptoms</a></li>
+              <li id="third" class="nav-item"><a class="nav-link text-white text"
+                  onclick="myFunction3()">Predictions</a></li>
+              <li class="nav-item " id="fourth"><a onclick="myFunction4()"
+                  class="nav-link text-white text">Prevention</a></button></li>
+
+</ul>
+    
+  </div>
+  </div>
+</nav>
+
+</header>
+
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <form name="sentMessage" id="libraryForm" action = "/Predictions" method="post" novalidate>
+    <div class="col-lg-4 col-md-4 col-10 mx-auto Content-center">
+      <div class="control-group ">
+          <div class="form-group floating-label-form-group controls">
+            <label>Date</label>
+            <input type="date" class="form-control rounded-pill " placeholder="Date" id="Date" name='Date' required data-validation-required-message="Please enter your name.">
+            <p class="help-block text-danger"></p>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-10 mx-auto Content-center">
+        <div class="control-group form-group">
+          <div class="form-group floating-label-form-group controls">
+            <label for="bookName" class="col-form-label">Confirmed_Cases</label>
+            <input type="text" class="form-control rounded-pill" placeholder="Email Confirmed_Cases" id="Confirmed_Cases" name="Confirmed_Cases" required data-validation-required-message="Please enter your email address.">
+          </div></div>
+        </div>
+        </div>
+
+        <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-10 mx-auto Content-center">
+        <div class="control-group">
+          <div class="form-group  floating-label-form-group controls">
+            <label>Deaths_Cases</label>
+            <input type="tel" class="form-control rounded-pill" placeholder="Deaths_Cases" name="Deaths_Cases" id="Deaths_Cases" required data-validation-required-message="Please enter your phone number.">
+            <p class="help-block text-danger"></p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-lg-4 col-md-4 col-10 mx-auto Content-center">
+        <div class="control-group">
+                <div class="form-group  floating-label-form-group controls">
+                  <label>Recovered_Cases</label>
+                  <input type="tel" class="form-control rounded-pill" placeholder="Recovered_Cases" name="Recovered_Cases" id="Recovered_Cases" required data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+        </div>
+      </div>
+<div class="row">
+      <div class="col-lg-4 col-md-4 col-10 mx-auto Content-center">
+          <div class="control-group">
+            <label for="Province">Province</label>
+                     <select name="Province" id="Province" class="form-control rounded-pill">
+                       <option value="Punjab">Punjab</option>
+                       <option value="Sindh">Sindh</option>
+                       <option value="Baluchistan">Baluchistan</option>
+                       <option value="Khyber_Pakhtunkhwa">Khyber_Pakhtunkhwa</option>
+                       <option value="Islamabad_Capital_Territory">Islamabad_Capital_Territory</option>
+                       <option value="Federal_Admininistration_Tribal_Area">Federal_Admininistration_Tribal_Area</option>
+                       <option value="Gilgit_Baltistan">Gilgit_Baltistan</option>
+                   </select>
+          </div>
+          </div>
+</div>
+<div class="row">
+          <div class="col-lg-4 col-md-4 col-10 mx-auto Content-center">
+          <div class="control-group">
+            <label for="Travel_history">Travel_History</label>
+           <select name="Travel_history" id="Travel_History" class="form-control rounded-pill">
+                                <option value="Travel_history_China">Travel_history_China</option>
+                                <option value="Travel_history_Dubai">Travel_history_Dubai</option>
+                                <option value="Travel_history_International_Passenger">Travel_history_International_Passenger</option>
+                                <option value="Travel_history_Jail">Travel_history_Jail</option>
+                                <option value="Travel_history_KSA">Travel_history_KSA</option>
+                                <option value="Travel_history_Tableeghi_Jamaat">Travel_history_Tableeghi_Jamaat</option>
+                                <option value="Travel_history_Syria">Travel_history_Syria</option>
+                                <option value="Travel_history_UK">Travel_history_UK</option>
+                                <option value="Travel_history_USA">Travel_history_USA</option>
+                                <option value="Travel_history_Local_Social_Contact">Travel_history_Local_Social_Contact</option>                              
+                                <option value="Travel_history_Iran_Taftan">Travel_history_Iran_Taftan</option>
+                                <option value="Travel_history_Unknown">Travel_history_Unknown</option>
+                                <option value="Local_Covid_Relative"> Local_Covid_Relative</option>
+
+                            </select> 
+                            </div>  
+                            </div>
+                            </div>
+      <div class="row">
+                            <div class="col-lg-4 col-md-4 col-10 mx-auto Content-center">
+                         <div class="control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>City</label>
+                                  <input type="tel" class="form-control rounded-pill" placeholder="City" name="City" id="City" required data-validation-required-message="Please enter your phone number.">
+                                  <p class="help-block text-danger"></p>
+                                </div>
+                        </div></div>
+                     </div>  
+        
+        <br>
+        <div >
+          <button  type="submit">prediction</button>
+          <h2 id="sample" style="border:#0000ff">{{prediction_texts}}</h2>
+<br>
+          <h2  style="border:#0000ff">{{Out}}</h2>
+
+
+
+         
+          
+</div>
+      </form>
+      <button id="button" onclick="download();">save as</button>
+      
+     
+      
+      
+  </div>
+</div>
+
+<div id="table">
+  <h1>Your books</h1>
+
+  <table class="table table-striped">
+      <thead>
+          <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Confirmed_Cases</th>
+              <th scope="col">Deaths_Cases</th>
+              <th scope="col">Recovered_Cases</th>
+             
+              <th scope="col">Province</th>
+              <th scope="col">Travel_History</th>
+              <th scope="col">City</th>
+              <th scope="col">Out</th>
+          </tr>
+      </thead>
+      <tbody id='tableBody'></tbody>
+  </table>
+</div>
+<footer>
+  <div class="container-fluid text-white">
+    <div class="row bg-dark  ml-3">
+      <div class=" col-lg-2 col-md-2 col-2 p-2 ml-2">
+        <img src="/static/down.jpg" height="50rem" width=80rem>
+      </div>
+      <div class="col-lg-6 col-md-6 col-2 text-center p-2 col-12"><strong>About |
+          Contact us | Privacy Policy | Our Apps | Advertisements</strong></div>
+      <div class="col-lg-4 col-md-4 col-2 text-center p-2 col-4">
+        <strong> Copyright@ All Rights Reserved </strong>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<script src="/static/javascript/jav11.js"></script>
+<script src="/static/javascript/jj3.js"></script>
+
+<script src="https://cdn.rawgit.com/eligrey/FileSaver.js/5ed507ef8aa53d8ecfea96d96bc7214cd2476fd2/FileSaver.min.js"></script>
+
+<script>
+function download() {
+  var save = document.getElementById("sample").innerText;
+  var blob = new Blob([save], {
+    type: "text/plain;charset=utf-8"
+  });
+  saveAs(blob, "file1.txt");
+}
+
+</script>
+
+</body>
+
+  
+<style>
+.h1{
+  color: azure;
+}
+</style>
+</body>
+
+
+
+{% endblock %}
+
+
+
